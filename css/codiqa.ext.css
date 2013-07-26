@@ -1,0 +1,151 @@
+/* Put your custom CSS here */
+
+/* HEADER */
+
+.ui-header {
+	height: 49px;
+	background-image: url(../images/bg-header.png); 
+	background-repeat: repeat-x;
+}
+
+.ui-header .ui-title {
+	margin-left: 48px;
+	margin-right: 48px;
+}
+
+.header__home-button {
+	width: 24px;
+	height: 24px;
+	background: transparent;
+	border: 0;
+}
+
+.header__home-button.ui-shadow {
+	-moz-box-shadow: 	0 0 0			rgba(255,255,255,0);
+	-webkit-box-shadow: 0 0 0 			rgba(255,255,255,0);
+	box-shadow: 		0 0 0			rgba(255,255,255,0);
+	top: 50%;
+	left: 12px;
+	margin-top: -12px;
+}
+
+.header__home-button.ui-shadow .ui-btn-inner {
+	border: 0;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+}
+
+.header__home-button.ui-shadow .ui-icon-home {
+	background-image: url(../images/icon-home.png); 
+	background-repeat: no-repeat;
+	background-position: top left;
+	width: 24px;
+	height: 24px;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+
+/* CONTENT */
+
+.ui-grid-a--home {
+	background: rgb(35,35,35);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(50%,rgba(35,35,35,1)), color-stop(100%,rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(35,35,35,1) 50%,rgba(0,0,0,1) 100%);
+	background:    -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(35,35,35,1) 50%, rgba(0,0,0,1) 100%);
+	background:     -ms-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(35,35,35,1) 50%,rgba(0,0,0,1) 100%);
+	background:      -o-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(35,35,35,1) 50%,rgba(0,0,0,1) 100%);
+	background:         linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(35,35,35,1) 50%,rgba(0,0,0,1) 100%);
+}
+
+.ui-grid-a--home .ui-link {
+	display: block; 
+	text-align: center; 
+	color: #e3e3e3; 
+	font-weight: normal; 
+	text-decoration: none; 
+	background-color: #000; 
+}
+
+.ui-grid-a--home .ui-block-a .ui-link {
+	margin-right: 1px;
+	font-size: 18px;
+}
+
+.ui-grid-a--home .ui-block-b .ui-link {
+	font-size: 12px;
+}
+
+.ui-grid-a--home .ui-link:visited {
+	color: #e3e3e3; 
+}
+
+.ui-grid-a--home .ui-link:hover {
+	background-color: #bb0000; 
+}
+
+.home-content__shop-link,
+.home-content__impianti-link {
+	background-repeat: no-repeat;
+	background-position: 50% 25%;
+	height: 48px;
+	padding-top: 148px;
+}
+
+.home-content__shop-link {
+	background-image: url(../images/icon-shop.png); 
+	margin-bottom: 1px;
+}
+
+.home-content__impianti-link {
+	background-image: url(../images/icon-impianti.png); 
+}
+
+.home-content__idisite-link,
+.home-content__newsletter-link,
+.home-content__resi-link,
+.home-content__corsi-link {
+	background-repeat: no-repeat;
+	background-position: 50% 25%;
+	height: 24px;
+	padding-top: 74px;
+}
+.home-content__idisite-link,
+.home-content__resi-link {
+	height: 23px;
+}
+
+.home-content__idisite-link {
+	background-image: url(../images/icon-idisite.png); 
+	margin-bottom: 1px;
+}
+
+.home-content__newsletter-link {
+	background-image: url(../images/icon-newsletter.png); 
+	margin-bottom: 1px;
+}
+
+.home-content__resi-link {
+	background-image: url(../images/icon-resi.png); 
+	margin-bottom: 1px;
+}
+
+.home-content__corsi-link {
+	background-image: url(../images/icon-corsi.png); 
+}
+
+
+/* FOOTER */
+
+.ui-footer {
+	background: rgb(255,0,0);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(50%,rgba(255,0,0,1)), color-stop(100%,rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(255,0,0,1) 50%,rgba(0,0,0,1) 100%);
+	background:    -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 100%);
+	background:     -ms-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(255,0,0,1) 50%,rgba(0,0,0,1) 100%);
+	background:      -o-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(255,0,0,1) 50%,rgba(0,0,0,1) 100%);
+	background:         linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(255,0,0,1) 50%,rgba(0,0,0,1) 100%);	
+	height: 1px;
+}
