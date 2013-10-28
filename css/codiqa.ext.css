@@ -109,6 +109,30 @@ h1 {
 }
 */
 
+/* HEADER buttons */
+
+
+.ui-header .ui-btn-up-a,
+.ui-header .ui-btn-hover-a {
+	background: transparent; 
+	border: 0; 
+	background-image: none !important; 
+	top: 12px; 
+}
+
+.ui-header .ui-btn-hover-a {
+	background: transparent; 
+	border: 0; 
+	background-image: none !important; 
+	top: 12px; 
+}
+
+
+.ui-header .ui-btn-up-a .ui-btn-inner,
+.ui-header .ui-btn-hover-a .ui-btn-inner { 
+	border: 0; 
+}
+
 .ui-icon-idiapp-home {
 	background-image: url(../images/icon-home.png); 
 }
