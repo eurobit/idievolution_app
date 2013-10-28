@@ -36,6 +36,7 @@ h1 {
 }
 
 
+/*
 .header__home-button,
 .header__back-button {
 	width: 24px;
@@ -105,6 +106,11 @@ h1 {
 	background-image: url(../images/icon-back-x2.png); 
 	}
 
+}
+*/
+
+.ui-icon-idiapp-home {
+	background-image: url(../images/icon-home.png); 
 }
 
 
