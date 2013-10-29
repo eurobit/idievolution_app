@@ -31,8 +31,8 @@ h1 {
 }
 
 .ui-header .ui-title__logo img { 
-	width: 144px; 
-	height: 24px; 
+	width: 150px; 
+	height: 26px; 
 }
 
 
@@ -260,7 +260,6 @@ h1 {
 	background-image: url(../images/icon-corsi.png); 
 }
 
-.impianti-content .impianti-content__link,
 .impianti-content .impianti-content__link { 
 	display: block; 
 	height: 100px; 
@@ -388,3 +387,93 @@ h1 {
 	height: 1px; 
 	border-top: 5px solid #000; 
 }
+
+
+/* == Media queries (breakpoint) ===== */
+
+/* -----------------------------------
+TABLET PORTRAIT
+------------------------------------ */
+@media screen and (min-width: 768px) { 
+
+.ui-grid-a--home .ui-block-a .ui-link {
+	font-size: 24px;
+}
+
+.ui-grid-a--home .ui-block-b .ui-link {
+	font-size: 18px;
+}
+
+.home-content__shop-link,
+.home-content__impianti-link { 
+	background-position: 50% 33%;
+	height: 130px;
+	padding-top: 330px;
+}
+
+.home-content__shop-link {
+	background-image: url(../images/icon-shop-x2.png); 
+}
+
+.home-content__impianti-link {
+	background-image: url(../images/icon-impianti-x2.png); 
+}
+
+.home-content__idisite-link,
+.home-content__newsletter-link,
+.home-content__resi-link,
+.home-content__corsi-link {
+	background-repeat: no-repeat;
+	background-position: 50% 25%;
+	height: 64px;
+	padding-top: 164px;
+}
+
+.home-content__idisite-link,
+.home-content__resi-link {
+	height: 67px;
+}
+
+.home-content__idisite-link {
+	background-image: url(../images/icon-idisite-x2.png); 
+}
+
+.home-content__newsletter-link {
+	background-image: url(../images/icon-newsletter-x2.png); 
+}
+
+.home-content__resi-link {
+	background-image: url(../images/icon-resi-x2.png); 
+}
+
+.home-content__corsi-link {
+	background-image: url(../images/icon-corsi-x2.png); 
+}
+
+.impianti-content .impianti-content__link { 
+	height: 150px; 
+	line-height: 150px; 
+}
+
+.impianti-content__stone-link {
+	background-image: url(../images/bg-impianti-stone-high.jpg); 
+}
+
+.impianti-content__aries-link {
+	background-image: url(../images/bg-impianti-aries-high.jpg); 
+}
+
+.impianti-content__tiger-link {
+	background-image: url(../images/bg-impianti-tiger-high.jpg); 
+}
+
+.impianti-content__tank-link {
+	background-image: url(../images/bg-impianti-tank-high.jpg); 
+}
+
+.impianti-content__short-link {
+	background-image: url(../images/bg-impianti-short-high.jpg); 
+}
+
+}
+
