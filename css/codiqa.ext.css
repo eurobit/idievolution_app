@@ -5,6 +5,7 @@
 	background-position: 50% 25%;
 	height: 48px;
 	padding-top: 148px;
+	display:block;
 }
 .home-content__shop-link {
 	background-image: url(../images/icon-shop.png); 
@@ -23,6 +24,7 @@
 	background-position: 50% 25%;
 	height: 24px;
 	padding-top: 74px;
+	display:block;
 }
 .home-content__idisite-link {
 	background-image: url(../images/icon-idisite.png); 
