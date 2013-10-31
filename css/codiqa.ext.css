@@ -204,11 +204,11 @@ h1 {
 	text-decoration: none; 
 	background-color: rgb(20,20,20); 
 	margin: 2px 0; 
-	-webkit-transition: all .3s; /* Safari and Chrome */
-	   -moz-transition: all .3s; /* Firefox 4 */
-	    -ms-transition: all .3s;
-	     -o-transition: all .3s; /* Opera */
-	        transition: all .3s;
+	-webkit-transition: all .2s; /* Safari and Chrome */
+	   -moz-transition: all .2s; /* Firefox 4 */
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s; /* Opera */
+	        transition: all .2s;
 }
 
 .impianti-content .impianti-content__link:visited { 
@@ -216,7 +216,7 @@ h1 {
 }
 
 .impianti-content .impianti-content__link:active { 
-	background-position: -1024px center; 
+	background-image: none; 
 	background-color: #bb0000; 
 }
 
@@ -286,6 +286,29 @@ h1 {
 
 .product-detail__image-short {
 	background-image: url(../images/impianti-short.jpg); 
+}
+
+.idi-button {
+	display:inline-block; 
+	background:url(../images/arrow-link.png) right center no-repeat #890000; 
+	color:#fff !important; 
+	border:1px solid #890000; 
+	border-top:1px solid #ff2424; 
+	margin-top:10px; 
+	height:25px; 
+	line-height: 25px; 
+	text-align:left; 
+	padding-left:10px; 
+	padding-right: 40px; 
+	-moz-border-radius:2px; 
+	-webkit-border-radius:2px; 
+	border-radius:2px; 
+	text-transform:lowercase; 
+	outline:none;
+}
+
+.idi-button:active {
+	background-color:#630101;
 }
 
 
