@@ -21,6 +21,11 @@ h1 {
 	background-repeat: repeat-x;
 }
 
+.ui-header-fixed { 
+	top: 0;
+	padding-top: 0; 
+}
+
 .ui-header .ui-title {
 	margin-left: 48px;
 	margin-right: 48px;
@@ -43,7 +48,7 @@ h1 {
 	background: transparent; 
 	border: 0; 
 	background-image: none !important; 
-	top: 12px; 
+	top: 12px !important; 
 }
 
 .ui-header .ui-btn-hover-a {
