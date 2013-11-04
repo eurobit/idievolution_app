@@ -6,6 +6,8 @@
   <!-- old viewport settings - has to be tested
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     -->
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -13,14 +15,14 @@
   <!-- jQuery and jQuery Mobile -->
   <script src="js/jquery-1.9.1.min.js"></script>
   <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css" />
-  <link rel="stylesheet" href="css/idievolution_app.css" />
+  <link rel="stylesheet" href="css/idievolution_app.css?version=1" />
   
   <!-- Extra Codiqa features -->
   <link rel="stylesheet" href="css/codiqa.ext.css">
   
   <!-- Extra Codiqa features -->
   <script src="js/jquery.mobile-1.3.2.min.js"></script>
-  <script src="js/codiqa.ext.js"></script>
+  <script src="js/codiqa.ext.js?version=1"></script>
 </head>
 <body>
 <!-- Home -->
@@ -37,19 +39,19 @@
         <div class="ui-grid-a ui-grid-a--home">
             <div class="ui-block-a">
                 <div>
-                    <a class="home-content__shop-link" href="#" onclick="window.open('http://shop.idievolution.it', '_blank', 'location=yes');" data-transition="fade" target="_blank">
+                    <a class="home-content__shop-link" href="#" onClick="window.open('http://shop.idievolution.it', '_blank', 'location=yes');" data-transition="fade" target="_blank">
                         shop
                     </a>
                 </div>
             </div>
             <div class="ui-block-b">
                 <div>
-                    <a class="home-content__idisite-link" href="#" onclick="window.open('http://www.idievolution.it', '_blank', 'location=yes');" data-transition="fade" target="_blank">
+                    <a class="home-content__idisite-link" href="#" onClick="window.open('http://www.idievolution.it', '_blank', 'location=yes');" data-transition="fade" target="_blank">
                         sito ufficiale
                     </a>
                 </div>
                 <div>
-                    <a class="home-content__newsletter-link" href="#" onclick="window.open('http://www.idievolution.it/italiano/archivio_newsletter', '_blank', 'location=yes');" data-transition="fade">
+                    <a class="home-content__newsletter-link" href="#" onClick="window.open('http://www.idievolution.it/italiano/archivio_newsletter', '_blank', 'location=yes');" data-transition="fade">
                         archivio newsletter
                     </a>
                 </div>
@@ -63,12 +65,12 @@
             </div>
             <div class="ui-block-b">
                 <div>
-                    <a class="home-content__resi-link" href="#" onclick="window.open('http://www.idievolution.it/italiano/resi', '_blank', 'location=yes');" data-transition="fade" target="_blank">
+                    <a class="home-content__resi-link" href="#" onClick="window.open('http://www.idievolution.it/italiano/resi', '_blank', 'location=yes');" data-transition="fade" target="_blank">
                         richiesta reso
                     </a>
                 </div>
                 <div>
-                    <a class="home-content__corsi-link" href="#" onclick="window.open('http://www.idievolution.it/italiano/contatti?iscrivicorso=1', '_blank', 'location=yes');" data-transition="fade" target="_blank">
+                    <a class="home-content__corsi-link" href="#" onClick="window.open('http://www.idievolution.it/italiano/contatti?iscrivicorso=1', '_blank', 'location=yes');" data-transition="fade" target="_blank">
                         corsi
                     </a>
                 </div>
@@ -143,7 +145,7 @@
             <p>L’inserto alloplastico IDI evolution Standard ha dato subito ampie prove cliniche di affidabilità chirurgica e protesica: era pertanto difficile immaginare l’affiancamento di una linea implantologica innovativa se non tesaurizzando il bagaglio scientifico maturato e progettando una vite endossa che, pur mantenendo le peculiarità morfologiche dell’impianto capostipite, introducesse importanti benefit in condizioni istologiche specifiche.</p>
             <p>Così, l’introduzione della triplice microfilettatura sincronizzata con il passo dell’impianto risolve efficacemente il problema di garantire un attacco stabile ai tessuti duri e molli perimplantari ed il nuovo macrodesign della porzione coronale dell’impianto, migliorando il raccordo con le spire implantari, crea un’eccellente continuità biologica, garantendo la conservazione del sigillo perimplantoprotesico.</p>
             <p>Il trattamento di superficie osteorapid, esteso fino a mm.1 dal bordo cervicale dellimpianto, aumenta lo sviluppo di superficie disponibile all’osteointegrazione, riducendo i problemi estetici derivanti dalla possibile trasparenza dei tessuti molli perimplantari.</p>
-            <p><a href="#" onclick="window.open('http://www.idievolution.it/italiano/prodotti/4-impianti/2-stone', '_blank', 'location=yes');" class="ui-link-inherit idi-button" target="_blank">Approfondisci online</a></p>
+            <p><a href="#" onClick="window.open('http://www.idievolution.it/italiano/prodotti/4-impianti/2-stone', '_blank', 'location=yes');" class="ui-link-inherit idi-button" target="_blank">Approfondisci online</a></p>
         </div>
     </div>
     <div data-theme="a" data-role="footer" data-position="fixed">
@@ -172,7 +174,7 @@
             <p>D'altra parte, la minore profondità delle spire e la differente macrogeometria di cresta, mentre da un lato agevolano la velocità di incorporazione della vite endossea, dall’altro riducono significativamente l’attrito prodotto dall’aggressione parietale della superficie di taglio spirale.</p>
             <p>Questi accorgimenti “smart“ consentono il raggiungimento delle quote di compressione ossea utili all’installazione del manufatto protesico immediato abbattendo i rischi di formazione dell’orletto osteonecrotico interfacciale, legati al potenziale danno termico ed all’eccessiva destrutturazione istomorfologica, generati da un’inadatta geometria spirale.</p>
             <p>Le specifiche descritte si apprezzano particolarmente nel tessuto osseo D 1, dove è più sfumato il limite biologico tra il livello di compressione tollerata e lo shock termico, in un terreno vascolare scarsamente rappresentato e perciò quantitavamente inidoneo a disperdere il riscaldamento intraoperatorio e a promuovere i processi di guarigione ossea perimplantare.</p>
-            <p><a href="#" onclick="window.open('http://www.idievolution.it/italiano/prodotti/4-impianti/4-aries_ariesdue', '_blank', 'location=yes');" class="ui-link-inherit idi-button" target="_blank">Approfondisci online</a></p>
+            <p><a href="#" onClick="window.open('http://www.idievolution.it/italiano/prodotti/4-impianti/4-aries_ariesdue', '_blank', 'location=yes');" class="ui-link-inherit idi-button" target="_blank">Approfondisci online</a></p>
         </div>
     </div>
     <div data-theme="a" data-role="footer" data-position="fixed">
@@ -201,7 +203,7 @@
             <p>Perci&#242;, mentre l'inserto alloplastico Aries, dedicato al tessuto osseo D1, &#232; dotato di un &#8220;affusto&#8220; maggiorato rispetto all'impianto standard, conforme all'esigenza di aumentare il livello di stabilit&#224; primaria della vite, la fixture riservata al tessuto osseo D4, &#232; caratterizzata dalla presenza di spire implantari molto profonde, capaci di &#8220;trascinare&#8220; la vite fino al termine del tunnel implantare, ad effetto autostabilizzante, con significativo aumento della stabilit&#224; primaria.</p>
             <p>L'incremento dell'attrito parietale amplifica inevitabilmente il rischio di shock termico e di danno vascolare  perimplantare; per aggirare questo pericolo biologico, &#232; stato adottato un procedimento tecnico sofisticato, caratterizzato dalla creazione di una spiralatura a doppio principio con partenza reciproca a 180&#176;.</p>
             <p>Se infatti nel tessuto osseo compatto ed atrofico le creste spirali, distanziate tra di loro da mm. 0.75, mantengono lo sviluppo complessivo della superficie implantare disponibile all' osteointegrazione ed essendo l'avvitamento della fixture due volte pi&#249; veloce rispetto l' impianto Aries, si pu&#242; ottenere un soddisfacente livello di stabilt&#224; primaria a fronte della preservazione del microcircolo perimplantare.</p>
-            <p><a href="#" onclick="window.open('http://www.idievolution.it/italiano/prodotti/4-impianti/5-tiger_tigerdue', '_blank', 'location=yes');" class="ui-link-inherit idi-button" target="_blank">Approfondisci online</a></p>
+            <p><a href="#" onClick="window.open('http://www.idievolution.it/italiano/prodotti/4-impianti/5-tiger_tigerdue', '_blank', 'location=yes');" class="ui-link-inherit idi-button" target="_blank">Approfondisci online</a></p>
         </div>
     </div>
     <div data-theme="a" data-role="footer" data-position="fixed">
@@ -229,7 +231,7 @@
             <p>Dal punto di vista macromorfologico il tank risponde completamente alle pretese biologiche della guarigione ossea post-estrattiva immediata: la forma cilindro-conica obbedisce alla necessit&#224; di replicare la profilometria della radice naturale e riduce gli stress procedurali della tecnica di incorporazione.</p>
             <p>Le spire a rostro d&#8217;aquila aumentano sensibilmente la stabilizzazione parietale dell&#8217;inserto, producendo contemporaneamente un&#8217;adeguata compattazione ossea chirurgica, a garanzia di una migliore immobilit&#224; implantare.</p>
             <p>L&#8217;irrudivimento &#8220;osteorapid&#8221;, prodotto per biacidificazione, garantisce la moltiplicazione della superficie biodisponibile e crea un&#8217;interfacie caratterizzata da un&#8217;eccellente osteofilia, a fronte di una netta riduzione della probabilit&#224; di surriscaldamento da alesaggio. Il collo implantare, a diametro 3,7 mm e 4,3 mm utilizza monconi a diametro 3,5 mm e 4 mm, in applicazione del concetto di &#8220;platform switching&#8221;, col risultato di una migliore distribuzione dei carichi funzionali e di una considerevole riduzione del rischio di perimplantite, in forza dell&#8217;allontanamento mediale del microgap di connessione protesica.</p>
-            <p><a href="#" onclick="window.open('http://www.idievolution.it/italiano/prodotti/4-impianti/6-tank', '_blank', 'location=yes');" class="ui-link-inherit idi-button" target="_blank">Approfondisci online</a></p>
+            <p><a href="#" onClick="window.open('http://www.idievolution.it/italiano/prodotti/4-impianti/6-tank', '_blank', 'location=yes');" class="ui-link-inherit idi-button" target="_blank">Approfondisci online</a></p>
         </div>
     </div>
     <div data-theme="a" data-role="footer" data-position="fixed">
@@ -253,7 +255,7 @@
         <div class="inner-text">
             <h1>Short</h1>
             <p>Indicazione retro feraminale e sottoantrale.<br />Macrostruttura dedicata ai siti con poco osso. <br />Conservata microfilettatura cervicale.</p>
-            <p><a href="#" onclick="window.open('http://www.idievolution.it/italiano/prodotti/4-impianti/26-short', '_blank', 'location=yes');" class="ui-link-inherit idi-button" target="_blank">Approfondisci online</a></p>
+            <p><a href="#" onClick="window.open('http://www.idievolution.it/italiano/prodotti/4-impianti/26-short', '_blank', 'location=yes');" class="ui-link-inherit idi-button" target="_blank">Approfondisci online</a></p>
         </div>
     </div>
     <div data-theme="a" data-role="footer" data-position="fixed">
