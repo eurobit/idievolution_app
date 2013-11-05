@@ -24,31 +24,6 @@
   <script src="js/jquery.mobile-1.3.2.min.js"></script>
   <script src="js/codiqa.ext.js?version=1"></script>
 
-  
-<script type="text/javascript">
-
-//function goto(url){
-		// This is just a wrapper for device.platform
-		//if (app.isAndroid()) {
-			//navigator.app.loadUrl(url);
-			//navigator.app.loadUrl(url, { openExternal:true } ); 
-		/*} else {
-			window.location.href = url;
-		}*/
-
-	//	var ref = window.open(encodeURI(url), '_system', 'location=yes');
-
-		//window.plugins.childBrowser.showWebPage(url,{ showLocationBar: true });
-	//}
-	$(document).on('click', ".external", function (e) {
-		e.preventDefault();
-		var targetURL = $(this).attr("href");
-		alert("ci siamo!");
-		window.open(targetURL, "_system");
-	});
-	
-
-</script>
 </head>
 <body>
 <!-- Home -->
@@ -65,7 +40,7 @@
         <div class="ui-grid-a ui-grid-a--home">
             <div class="ui-block-a">
                 <div>
-                    <a class="home-content__shop-link external" href="http://shop.idievolution.it" data-transition="fade">
+                    <a class="home-content__shop-link" href="#" onClick="window.open(encodeURI('http://shop.idievolution.it'), '_system', 'location=yes');" data-transition="fade" target="_blank">
                         shop
                     </a>
                 </div>
