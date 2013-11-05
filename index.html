@@ -26,7 +26,8 @@
 
   
 <script type="text/javascript">
-	function goto(url){
+	function onDeviceReady() {
+function goto(url){
 		// This is just a wrapper for device.platform
 		//if (app.isAndroid()) {
 			//navigator.app.loadUrl(url);
@@ -34,11 +35,11 @@
 		/*} else {
 			window.location.href = url;
 		}*/
-		alert("a");
+
 		var ref = window.open(encodeURI(url), '_system', 'location=yes');
 
 		//window.plugins.childBrowser.showWebPage(url,{ showLocationBar: true });
-	}
+	}}
 </script>
 </head>
 <body>
