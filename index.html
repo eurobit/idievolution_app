@@ -23,15 +23,19 @@
   <!-- Extra Codiqa features -->
   <script src="js/jquery.mobile-1.3.2.min.js"></script>
   <script src="js/codiqa.ext.js?version=1"></script>
+  <script src="js/childbrowser.js?version=1"></script>
+  
 <script type="text/javascript">
 	function goto(url){
 		// This is just a wrapper for device.platform
 		//if (app.isAndroid()) {
 			//navigator.app.loadUrl(url);
-			navigator.app.loadUrl(url, { openExternal:true } ); 
+			//navigator.app.loadUrl(url, { openExternal:true } ); 
 		/*} else {
 			window.location.href = url;
 		}*/
+		
+		window.plugins.childBrowser.showWebPage(url,{ showLocationBar: true });
 	}
 </script>
 </head>
