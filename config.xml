@@ -22,7 +22,10 @@
 	<preference name="load-url-timeout" value="60000" />
 	
 	<preference name="android-maxSdkVersion" value="18" />	
-
+	
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+	
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
@@ -41,5 +44,11 @@
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
+	
+	<feature name="InAppBrowser">
+    	<param name="android-package" value="org.apache.cordova.InAppBrowser" />
+		<param name="ios-package" value="CDVInAppBrowser" />
+	</feature>
+
 
 </widget>
