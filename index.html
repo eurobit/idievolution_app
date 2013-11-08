@@ -23,7 +23,14 @@
   <!-- Extra Codiqa features -->
   <script src="js/jquery.mobile-1.3.2.min.js"></script>
   <script src="js/codiqa.ext.js?version=1"></script>
-
+	<script type="text/javascript">
+		$(document).on('pageinit','[data-role=page]',function(){
+    $(".external").click(function(){
+        rel=$(this).attr("rel");
+		window.open(encodeURI(rel), '_system', 'location=yes');
+    });
+});
+	</script>
 </head>
 <body>
 <!-- Home -->
@@ -40,7 +47,7 @@
         <div class="ui-grid-a ui-grid-a--home">
             <div class="ui-block-a">
                 <div>
-                    <a class="home-content__shop-link" href="#" onClick="window.open('http://shop.idievolution.it', '_system', 'location=yes');">
+                    <a class="home-content__shop-link external" href="#" rel="http://shop.idievolution.it">
                         shop
                     </a>
                 </div>
