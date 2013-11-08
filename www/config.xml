@@ -39,4 +39,5 @@
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
 
     <access origin="http://127.0.0.1*" />
+
 </widget>

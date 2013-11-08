@@ -40,12 +40,11 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
-    <feature name="Media">
-        <param name="ios-package" value="CDVSound" />
-    </feature>
-	
+
 	<feature name="InAppBrowser">
 		<param name="ios-package" value="CDVInAppBrowser" />
 	</feature>
-
+	
+	<access origin="*.google.*" />
+	
 </widget>
