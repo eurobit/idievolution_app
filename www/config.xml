@@ -16,6 +16,8 @@
     <preference name="stay-in-webview" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     
+	<preference name="permissions" value="none" />
+	
 	<gap:platform name="ios" />
 	<gap:platform name="android" />
 	
@@ -39,5 +41,6 @@
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
 
     <access origin="http://127.0.0.1*" />
+	<access origin="http://google.com" />
 
 </widget>
