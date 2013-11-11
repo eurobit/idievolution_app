@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.idievolution.pgapp"
+        version   = "1.0.0">
+    <name>Idievolution app</name>
+
+    <description>
+        Applicazione per la visualizzazione dei prodotti idievolution
+    </description>
+
+    <author href="http://www.eurob.it" email="info@eurob.it">
+        Eurobusiness s.r.l.
+    </author>
+
+	<plugins>
+		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
+	</plugins>
+	
+	<access origin="*" />
+
+</widget>
