@@ -26,6 +26,7 @@
 	<script type="text/javascript">
 		$(document).on('pageinit','[data-role=page]',function(){
     $(".external").click(function(){
+								  alert("si");
         rel=$(this).attr("rel");
 		window.open(encodeURI(rel), '_system', 'location=yes');
     });
