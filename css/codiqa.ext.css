@@ -2,15 +2,26 @@
 
 /* GENERAL */
 
-.inner-text p {
+.inner-text p { 
 	font-size: 14px; 
-	color: #fff; 
+	color: #888; 
+}
+
+.inner-text .text-highlight {
+	background-color: #333;
+	padding: 1em; 
 }
 
 h1 {
 	font-size: 24px; 
 	font-weight: normal; 
 	color: #bb0000; 
+}
+
+h2 {
+	font-size: 16px; 
+	font-weight: bold; 
+	color: #fff; 
 }
 
 /* HEADER */
@@ -99,6 +110,18 @@ h1 {
 	padding: 0; 
 }
 
+.ui-grid-a .ui-block-a {
+	width: 100%
+} 
+
+.ui-grid-a .ui-block-b {
+	width: 50%
+} 
+
+.ui-grid-a .ui-block-c {
+	width: 33.33333%
+} 
+
 .ui-grid-a--home { 
 	margin-top: 10px; 
 	background: rgb(35,35,35);
@@ -142,56 +165,41 @@ h1 {
 	background-color: #bb0000; 
 }
 
-.home-content__shop-link,
 .home-content__impianti-link {
 	background-repeat: no-repeat;
 	background-position: 50% 25%;
-	height: 48px;
+	height: 60px;
 	padding-top: 148px;
-	display:block;
+	display:block; 
+	margin-bottom: 1px;
 }
 
 .home-content__shop-link {
 	background-image: url(../images/icon-shop.png); 
-	margin-bottom: 1px;
 }
 
 .home-content__impianti-link {
 	background-image: url(../images/icon-impianti.png); 
 }
 
-.home-content__idisite-link,
 .home-content__newsletter-link,
 .home-content__resi-link,
-.home-content__corsi-link {
+.home-content__shop-link {
 	background-repeat: no-repeat;
-	background-position: 50% 25%;
-	height: 24px;
-	padding-top: 74px;
+	background-position: 50% 20%;
+	height: 100px;
+	padding-top: 90px;
 	display:block;
-}
-.home-content__idisite-link,
-.home-content__resi-link {
-	height: 23px;
-}
-
-.home-content__idisite-link {
-	background-image: url(../images/icon-idisite.png); 
-	margin-bottom: 1px;
 }
 
 .home-content__newsletter-link {
 	background-image: url(../images/icon-newsletter.png); 
-	margin-bottom: 1px;
+	margin-right: 1px; 
 }
 
 .home-content__resi-link {
 	background-image: url(../images/icon-resi.png); 
-	margin-bottom: 1px;
-}
-
-.home-content__corsi-link {
-	background-image: url(../images/icon-corsi.png); 
+	margin-right: 1px; 
 }
 
 .impianti-content .impianti-content__link { 
@@ -293,6 +301,30 @@ h1 {
 	background-image: url(../images/impianti-short.jpg); 
 }
 
+.resi-detail__image-container {
+	width: 100%; 
+	height: 0; 
+	padding-top: 29%; 
+	position: relative;
+}
+
+.resi-detail__image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%; 
+	height: 100%; 
+	position: absolute;
+	top: 0; 
+	right: 0;
+	left: 0; 
+	bottom: 0;   
+}
+
+.resi-detail__image-resi {
+	background-image: url(../images/resi.jpg); 
+}
+
 .idi-button {
 	display:inline-block; 
 	background:url(../images/arrow-link.png) right center no-repeat #890000; 
@@ -359,38 +391,23 @@ TABLET PORTRAIT
 	font-size: 18px;
 }
 
-.home-content__shop-link,
 .home-content__impianti-link { 
 	background-position: 50% 33%;
 	height: 130px;
 	padding-top: 330px;
 }
 
-.home-content__shop-link {
-	background-image: url(../images/icon-shop-x2.png); 
-}
-
 .home-content__impianti-link {
 	background-image: url(../images/icon-impianti-x2.png); 
 }
 
-.home-content__idisite-link,
 .home-content__newsletter-link,
 .home-content__resi-link,
-.home-content__corsi-link {
+.home-content__shop-link {
 	background-repeat: no-repeat;
 	background-position: 50% 25%;
-	height: 64px;
-	padding-top: 164px;
-}
-
-.home-content__idisite-link,
-.home-content__resi-link {
-	height: 67px;
-}
-
-.home-content__idisite-link {
-	background-image: url(../images/icon-idisite-x2.png); 
+	height: 200px;
+	padding-top: 180px;
 }
 
 .home-content__newsletter-link {
@@ -401,8 +418,8 @@ TABLET PORTRAIT
 	background-image: url(../images/icon-resi-x2.png); 
 }
 
-.home-content__corsi-link {
-	background-image: url(../images/icon-corsi-x2.png); 
+.home-content__shop-link {
+	background-image: url(../images/icon-shop-x2.png); 
 }
 
 .impianti-content .impianti-content__link { 
@@ -428,6 +445,30 @@ TABLET PORTRAIT
 
 .impianti-content__short-link {
 	background-image: url(../images/bg-impianti-short-high.jpg); 
+}
+
+.product-detail__image-stone {
+	background-image: url(../images/impianti-stone-high.jpg); 
+}
+
+.product-detail__image-aries {
+	background-image: url(../images/impianti-aries-high.jpg); 
+}
+
+.product-detail__image-tiger {
+	background-image: url(../images/impianti-tiger-high.jpg); 
+}
+
+.product-detail__image-tank {
+	background-image: url(../images/impianti-tank-high.jpg); 
+}
+
+.product-detail__image-short {
+	background-image: url(../images/impianti-short-high.jpg); 
+}
+
+.resi-detail__image-resi {
+	background-image: url(../images/resi-high.jpg); 
 }
 
 }
