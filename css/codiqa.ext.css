@@ -165,21 +165,21 @@ h2 {
 	background-color: #bb0000; 
 }
 
-.home-content__impianti-link {
+.home-content__impianti-link,
+.home-content__game-link {
 	background-repeat: no-repeat;
 	background-position: 50% 25%;
-	height: 60px;
-	padding-top: 148px;
+	height: 132px;
+	padding-top: 169px;
 	display:block; 
-	margin-bottom: 1px;
-}
-
-.home-content__shop-link {
-	background-image: url(../images/icon-shop.png); 
 }
 
 .home-content__impianti-link {
 	background-image: url(../images/icon-impianti.png); 
+}
+
+.home-content__game-link {
+	background-image: url(../images/icon-game.png); 
 }
 
 .home-content__azienda-link,
@@ -207,6 +207,11 @@ h2 {
 .home-content__newsletter-link {
 	background-image: url(../images/icon-newsletter.png); 
 	margin-right: 1px; 
+	margin-bottom: 1px; 
+}
+
+.home-content__shop-link {
+	background-image: url(../images/icon-shop.png); 
 }
 
 .impianti-content .impianti-content__link { 
@@ -344,6 +349,10 @@ h2 {
 	background-image: url(../images/shop.jpg); 
 }
 
+.page-detail__image-game {
+	background-image: url(../images/game.jpg); 
+}
+
 .idi-button {
 	display:inline-block; 
 	background:url(../images/arrow-link.png) right center no-repeat #890000; 
@@ -385,14 +394,45 @@ h2 {
 /* FOOTER */
 
 .ui-footer {
-	background: rgb(255,0,0);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(50%,rgba(255,0,0,1)), color-stop(100%,rgba(0,0,0,1)));
-	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(255,0,0,1) 50%,rgba(0,0,0,1) 100%);
-	background:    -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 100%);
-	background:     -ms-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(255,0,0,1) 50%,rgba(0,0,0,1) 100%);
-	background:      -o-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(255,0,0,1) 50%,rgba(0,0,0,1) 100%);
-	background:         linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(255,0,0,1) 50%,rgba(0,0,0,1) 100%);	
 	border-top: 5px solid #000; 
+	height: 49px;
+	background-image: url(../images/bg-header.png); 
+	background-repeat: repeat-x;
+	text-align: center; 
+}
+
+.ui-footer__link { 
+	width: 36px; 
+	height: 36px; 
+	background-size: 100%; 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: transparent; 
+	border: 0; 
+	margin: 6px !important;
+}
+
+.ui-footer__link .ui-btn-inner {
+	border: 0;
+}
+
+.ui-footer__link--impianti {
+	background-image: url(../images/icon-impianti.png); 
+}
+.ui-footer__link--game {
+	background-image: url(../images/icon-game.png); 
+}
+.ui-footer__link--azienda {
+	background-image: url(../images/icon-azienda.png); 
+}
+.ui-footer__link--resi {
+	background-image: url(../images/icon-resi.png); 
+}
+.ui-footer__link--newsletter {
+	background-image: url(../images/icon-newsletter.png); 
+}
+.ui-footer__link--shop {
+	background-image: url(../images/icon-shop.png); 
 }
 
 
@@ -409,24 +449,29 @@ TABLET PORTRAIT
 	font-size: 18px;
 }
 
-.home-content__impianti-link { 
+.home-content__impianti-link,
+.home-content__game-link { 
 	background-position: 50% 33%;
 	height: 120px;
-	padding-top: 235px;
+	padding-top: 281px;
 }
 
 .home-content__impianti-link {
 	background-image: url(../images/icon-impianti-x2.png); 
 }
 
+.home-content__game-link {
+	background-image: url(../images/icon-game-x2.png); 
+}
+
 .home-content__azienda-link,
-.home-content__newsletter-link,
 .home-content__resi-link,
+.home-content__newsletter-link,
 .home-content__shop-link {
 	background-repeat: no-repeat;
 	background-position: 50% 40%;
-	height: 110px;
-	padding-top: 180px;
+	height: 60px;
+	padding-top: 140px;
 }
 
 .home-content__azienda-link {
@@ -506,5 +551,125 @@ TABLET PORTRAIT
 	background-image: url(../images/shop-high.jpg); 
 }
 
+.page-detail__image-game {
+	background-image: url(../images/game-high.jpg); 
+}
 
+.ui-footer__link { 
+	width: 48px; 
+	height: 48px; 
+	margin: 2px 36px !important;
+}
+
+
+}
+
+
+
+/* GAME RULES */
+
+#stage {
+    min-height: 350px;
+    position: relative;
+    -webkit-background-size: 100%;
+
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+	margin-top:0px;
+}
+
+.has3D #stage {
+    -webkit-perspective: 500;
+    -webkit-backface-visibility: hidden;
+    /*-webkit-transform-style: preserve-3d;*/
+    /*-webkit-perspective-origin: 50% 50%;*/
+}
+
+#cube {
+    width: 240px;
+    height: 360px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.has3D #cube {
+    -webkit-transform-style: preserve-3d;
+	-webkit-transform: rotateX(30deg);
+	-webkit-transform: rotateY(-30deg);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.side {
+    text-align: center;
+    color: red; /* ? */
+    width: 240px;
+    height: 60px;
+}
+
+.has3D .side {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+}
+
+.card {
+    float: left;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.25s ease-out, opacity 0.25s linear;
+    -webkit-background-size: 780px 60px;
+    background-image: url(../images/sprites.png);
+    width: 60px; /* Need to update script if this changes */
+    height: 60px;
+}
+
+.has3D .card {
+    -webkit-backface-visibility: hidden;
+    -webkit-background-size: 1300px 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.found {
+    -webkit-animation: pulse;
+    -webkit-animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 4;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale(1);
+    }
+    to {
+        -webkit-transform: scale(1.2);
+    }
+}
+
+.hud {
+    position: absolute;
+    margin: 5px;
+    font: bold 16pt courier;
+}
+
+#memoryActions {
+    left: 0;
+    bottom: 0;
+}
+
+a, a:visited {
+  color: #cc5500;
+  text-decoration: none;
+}
+
+#score {
+    right: 0;
+    bottom: 60px;
 }
