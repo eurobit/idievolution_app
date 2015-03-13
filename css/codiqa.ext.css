@@ -184,12 +184,18 @@ h2 {
 .home-content__azienda-link,
 .home-content__resi-link,
 .home-content__newsletter-link,
-.home-content__shop-link {
+.home-content__shop-link,
+.home-content__corsi-link,
+.home-content__blank-link{
 	background-repeat: no-repeat;
 	background-position: 50% 25%;
 	height: 30px;
 	padding-top: 60px;
 	display:block;
+}
+.home-content__blank-link{
+	background-image:url(../images/icon-blank.png);
+	background-color:#000;
 }
 
 .home-content__azienda-link {
@@ -211,6 +217,10 @@ h2 {
 
 .home-content__shop-link {
 	background-image: url(../images/icon-shop.png); 
+}
+
+.home-content__corsi-link {
+	background-image: url(../images/icon-corsi.png); 
 }
 
 .impianti-content .impianti-content__link { 
@@ -466,13 +476,19 @@ TABLET PORTRAIT
 .home-content__azienda-link,
 .home-content__resi-link,
 .home-content__newsletter-link,
-.home-content__shop-link {
+.home-content__shop-link,
+.home-content__corsi-link,
+.home-content__blank-link{
 	background-repeat: no-repeat;
 	background-position: 50% 40%;
 	height: 60px;
 	padding-top: 140px;
 }
 
+.home-content__blank-link{
+	background-image:url(../images/icon-blank-x2.png);
+	background-color:#000;
+}
 .home-content__azienda-link {
 	background-image: url(../images/icon-azienda-x2.png); 
 }
@@ -487,6 +503,10 @@ TABLET PORTRAIT
 
 .home-content__shop-link {
 	background-image: url(../images/icon-shop-x2.png); 
+}
+
+.home-content__corsi-link {
+	background-image: url(../images/icon-corsi-x2.png); 
 }
 
 .impianti-content .impianti-content__link { 
