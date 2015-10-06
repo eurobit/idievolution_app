@@ -21,7 +21,7 @@
     <preference name="fullscreen"       value="false" />
 	<preference name="load-url-timeout" value="60000" />
 	
-	<preference name="android-maxSdkVersion" value="25" />	
+	<preference name="android-maxSdkVersion" value="23" />	
 	
 	<gap:platform name="ios" />
 	<gap:platform name="android" />
